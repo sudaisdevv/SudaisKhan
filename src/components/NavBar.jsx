@@ -39,7 +39,7 @@ const NavBar = () => {
 
       {/* Mobile Dropdown Menu with Animation */}
       <div
-        className={`absolute top-16 left-0 w-full bg-gray-300 text-white dark:text-black shadow-lg rounded-b-2xl md:hidden z-50 transform transition-all duration-500 ease-in-out ${
+        className={`absolute top-16 left-0 w-full bg-gray-500 text-white shadow-lg rounded-b-2xl md:hidden z-50 transform transition-all duration-500 ease-in-out ${
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
         }`}
       >
