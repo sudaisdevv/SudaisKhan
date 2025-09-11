@@ -50,7 +50,7 @@ const NavBar = () => {
           <li className="cursor-pointer hover:opacity-70 transition">Services</li>
           <li className="cursor-pointer hover:opacity-70 transition">About</li>
           <li>
-            <WrapButton />
+<InteractiveHoverButton>Contact</InteractiveHoverButton>
           </li>
           <li>
             <ThemeToggleButton />
