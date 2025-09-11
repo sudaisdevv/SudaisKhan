@@ -17,11 +17,11 @@ function Header() {
         {/* Left Side - Info Section */}
         <div className="my-info w-full max-w-xl flex flex-col gap-6 text-center lg:text-left">
           <h1 className="text-[clamp(1.5rem,4vw,2.5rem)] font-medium">Hey I’m</h1>
-          <TextScroll 
-            className="text-[clamp(2rem,6vw,4rem)] font-semibold" 
-            text="SUDAIS KHAN" 
-          />
-
+          {/* <TextScroll 
+            
+            text="" 
+          /> */}
+          <h1 className="text-[clamp(2rem,6vw,4rem)] font-semibold" >SUDAIS KHAN</h1>
           {/* Subtitle / About */}
           <div className="about-info-header">
             <p className="text-[clamp(0.95rem,1.5vw,1.25rem)] leading-relaxed px-2 sm:px-0">

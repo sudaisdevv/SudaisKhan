@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("/fonts/RobotoFlex.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+}

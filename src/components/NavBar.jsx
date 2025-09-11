@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ThemeToggleButton from "./ui/theme-toggle-button";
 import WrapButton from "./ui/wrap-button";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ const NavBar = () => {
 
       {/* Contact + Theme Toggle (Desktop) */}
       <div className="hidden md:flex contact-btn items-center space-x-4">
-        <WrapButton  onClick/>
+<InteractiveHoverButton>Contact</InteractiveHoverButton>
         <ThemeToggleButton />
       </div>
 
