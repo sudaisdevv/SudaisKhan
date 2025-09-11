@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="main-nav px-6 py-4 rounded-2xl flex items-center justify-between bg-transparent relative">
       {/* Logo */}
       <div className="logo">
-        <h1 className="text-2xl font-bold">Ssudais</h1>
+        <h1 className="text-2xl font-bold">Sudais</h1>
       </div>
 
       {/* Desktop Nav Links */}
