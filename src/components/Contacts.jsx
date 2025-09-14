@@ -6,7 +6,6 @@ import FlipLink from "./ui/text-effect-flipper";
 function Contacts() {
   const [time, setTime] = useState({ formatted: "", period: "" });
 
-  // Auto update time in 12-hour format with AM/PM
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
@@ -15,7 +14,7 @@ function Contacts() {
       let seconds = now.getSeconds();
       const period = hours >= 12 ? "PM" : "AM";
 
-      hours = hours % 12 || 12; // convert to 12-hour
+      hours = hours % 12 || 12;
       const formatted = `${hours.toString().padStart(2, "0")}:${minutes
         .toString()
         .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
@@ -29,7 +28,7 @@ function Contacts() {
   }, []);
 
   return (
-    <>
+    <section id="contact">
       <div className="main-contact w-full min-h-[25vh] rounded bg-black text-white mt-10 p-6 flex flex-col items-center justify-center">
         <FlipLink>Contact</FlipLink>
 
@@ -40,9 +39,8 @@ function Contacts() {
           transition={{ duration: 1.5 }}
         />
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center w-full mt-8 px-4">
-          {/* Left Side - Contact Info */}
+          {/* Left Side */}
           <motion.div
             className="flex flex-col md:flex-row gap-4 text-center md:text-left"
             initial={{ opacity: 0, x: -40 }}
@@ -58,7 +56,7 @@ function Contacts() {
             </p>
           </motion.div>
 
-          {/* Right Side - Time + Back to Top */}
+          {/* Right Side */}
           <motion.div
             className="flex flex-row items-center gap-6 mt-6 md:mt-0"
             initial={{ opacity: 0, x: 40 }}
@@ -69,16 +67,13 @@ function Contacts() {
               {time.formatted}
               <span className="text-xs font-semibold">{time.period}</span>
             </p>
-            <a
-              href="#top"
-              className="hover:text-gray-200  cursor-pointer"
-            >
+            <a href="#top" className="hover:text-gray-200 cursor-pointer">
               ↑ Back to Top
             </a>
           </motion.div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

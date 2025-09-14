@@ -5,7 +5,6 @@ import { TextScroll } from "./ui/text-scroll";
 import { motion } from "framer-motion";
 import LoadingOverlay from "./LoadingOverlay";
 import dp from "../assets/dp.jpg";
-
 function Header() {
   return (
     <>
@@ -32,9 +31,15 @@ function Header() {
           
           {/* Button */}
           <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mt-4">
-            <button className="border border-gray-400 h-[42px] flex items-center justify-center px-6 py-2 font-semibold rounded-xl shadow-md hover:bg-gray-400 hover:text-black transition w-full sm:w-auto">
-              Get CV
-            </button>
+           <a href="/SudaisResume.docx" download>
+  <button
+    className="border border-gray-400 h-[42px] flex items-center justify-center px-6 py-2 font-semibold rounded-xl shadow-md hover:bg-gray-400 hover:text-black transition w-full sm:w-auto"
+  >
+    Get CV
+  </button>
+</a>
+
+
           </div>
 
           {/* Social Links */}

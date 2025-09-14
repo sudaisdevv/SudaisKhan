@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import ThemeToggleButton from "./ui/theme-toggle-button";
-import WrapButton from "./ui/wrap-button";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +23,9 @@ const NavBar = () => {
 
       {/* Contact + Theme Toggle (Desktop) */}
       <div className="hidden md:flex contact-btn items-center space-x-4">
-<InteractiveHoverButton>Contact</InteractiveHoverButton>
+        <a href="#contact">
+          <InteractiveHoverButton>Contact</InteractiveHoverButton>
+        </a>
         <ThemeToggleButton />
       </div>
 
@@ -39,7 +39,7 @@ const NavBar = () => {
         <span className="block w-6 h-0.5 bg-gray-600"></span>
       </button>
 
-      {/* Mobile Dropdown Menu with Animation */}
+      {/* Mobile Dropdown Menu */}
       <div
         className={`absolute top-16 left-0 w-full bg-gray-500 text-white shadow-lg rounded-b-2xl md:hidden z-50 transform transition-all duration-500 ease-in-out ${
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
@@ -50,7 +50,9 @@ const NavBar = () => {
           <li className="cursor-pointer hover:opacity-70 transition">Services</li>
           <li className="cursor-pointer hover:opacity-70 transition">About</li>
           <li>
-<InteractiveHoverButton>Contact</InteractiveHoverButton>
+            <a href="#contact">
+              <InteractiveHoverButton>Contact</InteractiveHoverButton>
+            </a>
           </li>
           <li>
             <ThemeToggleButton />
