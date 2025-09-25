@@ -4,7 +4,7 @@ import FlipLink from "./ui/text-effect-flipper";
 import { TextScroll } from "./ui/text-scroll";
 import { motion } from "framer-motion";
 import LoadingOverlay from "./LoadingOverlay";
-import dp from "../assets/dp.jpg";
+import dp from "../assets/profile.jpg";
 function Header() {
   return (
     <>
@@ -82,7 +82,7 @@ function Header() {
             </motion.svg>
 
             {/* Profile Image */}
-            <div className="w-[85%] h-[85%] rounded-full overflow-hidden shadow-xl">
+            <div className="w-[100%] h-[100%] rounded-full overflow-hidden shadow-xl">
               <img
                 src={dp}
                 alt="Profile"
